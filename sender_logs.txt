@@ -1,0 +1,1176 @@
+[12:24:28.805]: ===== MARIS Buoy V2 =====
+[12:24:28.805]: [BOOT] Mode: SETUP
+[12:24:28.806]: [HTTP] PUT /buoy/ctrl.json
+[12:24:30.334]: [HTTP] Response in 1526ms
+[12:24:30.335]: [HTTP] DELETE /buoy/history.json
+[12:24:31.608]: [HTTP] Response in 1271ms
+[12:24:31.609]: [HTTP] POST /buoy/history.json
+[12:24:32.915]: [HTTP] Response in 1305ms
+[12:24:32.915]: [HTTP] POST /buoy/history.json
+[12:24:34.214]: [HTTP] Response in 1297ms
+[12:24:34.215]: [HTTP] POST /buoy/history.json
+[12:24:35.428]: [HTTP] Response in 1211ms
+[12:24:35.428]: [HTTP] POST /buoy/history.json
+[12:24:36.580]: [HTTP] Response in 1150ms
+[12:24:36.581]: [HTTP] POST /buoy/history.json
+[12:24:37.778]: [HTTP] Response in 1195ms
+[12:24:37.778]: [HTTP] POST /buoy/history.json
+[12:24:38.900]: [HTTP] Response in 1120ms
+[12:24:38.900]: [HTTP] POST /buoy/history.json
+[12:24:40.060]: [HTTP] Response in 1158ms
+[12:24:40.061]: [HTTP] POST /buoy/history.json
+[12:24:41.197]: [HTTP] Response in 1135ms
+[12:24:41.198]: [HTTP] POST /buoy/history.json
+[12:24:42.342]: [HTTP] Response in 1142ms
+[12:24:42.343]: [HTTP] POST /buoy/history.json
+[12:24:43.539]: [HTTP] Response in 1195ms
+[12:24:43.540]: [SIM] Starting position from Firebase: -33.8428, 16.4355
+[12:24:43.841]: [SD] Card ready
+[12:24:44.342]: [15538ms] [INFO] NRF24 ready
+[12:24:44.343]: [NET] Waiting for MTN...
+[12:25:07.854]: [NET] Registered on MTN
+[12:25:07.855]: [SIG] Checking...
+[12:25:09.171]: [SIG] CSQ:26 | -61dBm | EXCELLENT
+[12:25:09.171]: [GPRS] Opening bearer...
+[12:25:18.085]: [GPRS] Connecting...
+[12:25:29.733]: [GPRS] Connected — IP: 100.106.42.1
+[12:25:29.733]: [NTP] Syncing...
+[12:25:33.159]: [NTP] Done
+[12:25:33.160]: [GSM] Ready
+[12:25:33.160]: [SIM] Fetching latest GPS from Firebase...
+[12:25:33.160]: [HTTP] GET /buoy/history.json
+[12:25:34.379]: [HTTP] Response in 1217ms
+[12:25:34.380]: [SIM] Starting position from Firebase: -33.842800, 16.435500
+[12:25:34.380]: [HTTP] GET /buoy/ctrl.json
+[12:25:35.513]: [HTTP] Response in 1131ms
+[12:25:35.513]: [CFG] tx_interval=30s
+[12:25:35.514]: [CMD] No pending command
+[12:25:35.515]: [DEMO] Sequence: g → i(40s) → g → h → g → n → u → r → g → q
+[12:25:35.515]: [DEMO] speed=real  lines=1000
+[12:25:35.515]: 
+[12:25:35.515]: ========== GSM Cycle ==========
+[12:25:35.516]: [CYCLE] cycle_active=YES  tx_mode=LONG  surface_hold=NO
+[12:25:35.516]: [SIM] cycle=1 lat=-33.75052 lng=16.38662 batt=85%
+[12:25:37.516]: [HTTP] GET /buoy/ctrl.json
+[12:25:38.907]: [HTTP] Response in 1389ms
+[12:25:39.407]: [CFG] tx_interval=30s
+[12:25:39.408]: [CMD] No pending command
+[12:25:39.408]: [SD] Surface: la=-33.75052 ln=16.38662 b=84%
+[12:25:40.408]: [BAL] Checking MTN balance...
+[12:25:56.410]: [BAL] Airtime: R18.80 | Data: 938.01 MB
+[12:25:56.410]: [DATA] Payload: {"ts":"2026-05-18T12:25:56","la":-33.750523,"ln":16.386624,"b":84,"airtime":18.8,"data_mb":"938.01 MB"}
+[12:25:56.410]: [DATA] Payload size: 103 bytes (Iridium limit: 340)
+[12:25:56.410]: [HTTP] POST /buoy/history.json
+[12:25:57.675]: [HTTP] Response in 1264ms
+[12:25:58.176]: [HTTP] POST OK
+[12:25:58.177]: [STATE] Saved: gsm=1 nrf=0 sim_cycle=1
+[12:25:58.177]: [CYCLE] Done. gsm_cycles=1
+[12:25:58.177]: 
+[12:26:28.209]: [HTTP] PUT /buoy/ctrl/tx_interval.json  value=40
+[12:26:30.546]: [HTTP] Response in 2335ms
+[12:26:30.546]: 
+[12:26:30.547]: ========== GSM Cycle ==========
+[12:26:30.547]: [CYCLE] cycle_active=YES  tx_mode=LONG  surface_hold=NO
+[12:26:30.547]: [SIM] cycle=2 lat=-33.69989 lng=16.35285 batt=85%
+[12:26:32.547]: [HTTP] GET /buoy/ctrl.json
+[12:26:33.670]: [HTTP] Response in 1121ms
+[12:26:34.170]: [CFG] tx_interval=40s
+[12:26:34.171]: [CMD] No pending command
+[12:26:34.171]: [SD] Surface: la=-33.69989 ln=16.35285 b=84%
+[12:26:35.172]: [BAL] Checking MTN balance...
+[12:26:51.172]: [BAL] Airtime: R18.80 | Data: 938.01 MB
+[12:26:51.173]: [DATA] Payload: {"ts":"2026-05-18T12:26:51","la":-33.699893,"ln":16.352846,"b":84,"airtime":18.8,"data_mb":"938.01 MB"}
+[12:26:51.173]: [DATA] Payload size: 103 bytes (Iridium limit: 340)
+[12:26:51.173]: [HTTP] POST /buoy/history.json
+[12:26:52.315]: [HTTP] Response in 1140ms
+[12:26:52.815]: [HTTP] POST OK
+[12:26:52.816]: [STATE] Saved: gsm=2 nrf=0 sim_cycle=2
+[12:26:52.816]: [CYCLE] Done. gsm_cycles=2
+[12:26:52.817]: 
+[12:27:32.858]: [HTTP] PUT /buoy/ctrl/command.json  cmd=surface_hold
+[12:27:34.034]: [SEARCH] Entered LIVE_SEARCHING - GSM ping every 40s, NRF probe every 10s
+[12:27:34.034]: [SEARCH] Bring receiver within NRF24 range to trigger transfer.
+[12:27:34.034]: [SEARCH] NRF24 probe...
+[12:27:34.034]: [185230ms] [INFO] Transfer start: sensor=1000 surface=1 total=1001
+[12:27:34.535]: [185731ms] [INFO] No receiver in range - will retry next cycle
+[12:27:34.535]: [SEARCH] No receiver in range - will retry
+[12:27:34.535]: 
+[12:28:14.573]: 
+[12:28:14.573]: [SEARCH] GSM position ping...
+[12:28:14.573]: ========== GSM Cycle ==========
+[12:28:14.573]: [CYCLE] cycle_active=YES  tx_mode=SHORT  surface_hold=YES
+[12:28:14.574]: [SIM] cycle=3 lat=-33.61586 lng=16.30940 batt=85%
+[12:28:16.574]: [HTTP] GET /buoy/ctrl.json
+[12:28:17.778]: [HTTP] Response in 1202ms
+[12:28:18.279]: [CFG] tx_interval=40s
+[12:28:18.279]: [CMD] Pending: surface_hold  status=pending
+[12:28:18.279]: [SD] Surface: la=-33.61586 ln=16.30940 b=84%
+[12:28:19.280]: [BAL] Checking MTN balance...
+[12:28:35.280]: [BAL] Airtime: R18.80 | Data: 938.01 MB
+[12:28:35.281]: [DATA] Payload: {"ts":"2026-05-18T12:28:35","la":-33.615857,"ln":16.3094,"b":84,"airtime":18.8,"data_mb":"938.01 MB"}
+[12:28:35.281]: [DATA] Payload size: 101 bytes (Iridium limit: 340)
+[12:28:35.281]: [HTTP] POST /buoy/history.json
+[12:28:36.882]: [HTTP] Response in 1597ms
+[12:28:37.383]: [HTTP] POST OK
+[12:28:37.384]: [STATE] Saved: gsm=3 nrf=0 sim_cycle=3
+[12:28:37.384]: [CYCLE] Done. gsm_cycles=3
+[12:28:37.384]: 
+[12:28:37.384]: [SEARCH] NRF24 probe...
+[12:28:37.384]: [248580ms] [INFO] Transfer start: sensor=1000 surface=1 total=1001
+[12:28:37.885]: [249081ms] [INFO] No receiver in range - will retry next cycle
+[12:28:37.885]: [SEARCH] No receiver in range - will retry
+[12:28:37.885]: 
+[12:28:37.886]: [SEARCH] NRF24 probe...
+[12:28:37.886]: [249082ms] [INFO] Transfer start: sensor=1000 surface=1 total=1001
+[12:28:38.386]: [249582ms] [INFO] START ack'd - beginning transfer
+[12:28:38.388]: [249584ms] [INFO] FILE header: sensors
+[12:28:38.888]: [250084ms] [INFO] /sensor_log.txt: 1000 lines
+[12:28:38.888]: [NRF] /sensor_log.txt line 1/1000
+[12:28:38.987]: [NRF] /sensor_log.txt line 2/1000
+[12:28:39.084]: [NRF] /sensor_log.txt line 3/1000
+[12:28:39.182]: [NRF] /sensor_log.txt line 4/1000
+[12:28:39.280]: [NRF] /sensor_log.txt line 5/1000
+[12:28:39.378]: [NRF] /sensor_log.txt line 6/1000
+[12:28:39.477]: [NRF] /sensor_log.txt line 7/1000
+[12:28:39.576]: [NRF] /sensor_log.txt line 8/1000
+[12:28:39.674]: [NRF] /sensor_log.txt line 9/1000
+[12:28:39.772]: [NRF] /sensor_log.txt line 10/1000
+[12:28:39.870]: [NRF] /sensor_log.txt line 11/1000
+[12:28:39.968]: [NRF] /sensor_log.txt line 12/1000
+[12:28:40.066]: [NRF] /sensor_log.txt line 13/1000
+[12:28:40.165]: [NRF] /sensor_log.txt line 14/1000
+[12:28:40.263]: [NRF] /sensor_log.txt line 15/1000
+[12:28:40.361]: [NRF] /sensor_log.txt line 16/1000
+[12:28:40.459]: [NRF] /sensor_log.txt line 17/1000
+[12:28:40.557]: [NRF] /sensor_log.txt line 18/1000
+[12:28:40.655]: [NRF] /sensor_log.txt line 19/1000
+[12:28:40.753]: [NRF] /sensor_log.txt line 20/1000
+[12:28:40.852]: [NRF] /sensor_log.txt line 21/1000
+[12:28:40.950]: [NRF] /sensor_log.txt line 22/1000
+[12:28:41.048]: [NRF] /sensor_log.txt line 23/1000
+[12:28:41.147]: [NRF] /sensor_log.txt line 24/1000
+[12:28:41.245]: [NRF] /sensor_log.txt line 25/1000
+[12:28:41.343]: [NRF] /sensor_log.txt line 26/1000
+[12:28:41.443]: [NRF] /sensor_log.txt line 27/1000
+[12:28:41.541]: [NRF] /sensor_log.txt line 28/1000
+[12:28:41.639]: [NRF] /sensor_log.txt line 29/1000
+[12:28:41.737]: [NRF] /sensor_log.txt line 30/1000
+[12:28:41.835]: [NRF] /sensor_log.txt line 31/1000
+[12:28:41.933]: [NRF] /sensor_log.txt line 32/1000
+[12:28:42.031]: [NRF] /sensor_log.txt line 33/1000
+[12:28:42.129]: [NRF] /sensor_log.txt line 34/1000
+[12:28:42.227]: [NRF] /sensor_log.txt line 35/1000
+[12:28:42.325]: [NRF] /sensor_log.txt line 36/1000
+[12:28:42.424]: [NRF] /sensor_log.txt line 37/1000
+[12:28:42.521]: [NRF] /sensor_log.txt line 38/1000
+[12:28:42.619]: [NRF] /sensor_log.txt line 39/1000
+[12:28:42.717]: [NRF] /sensor_log.txt line 40/1000
+[12:28:42.815]: [NRF] /sensor_log.txt line 41/1000
+[12:28:42.915]: [NRF] /sensor_log.txt line 42/1000
+[12:28:43.013]: [NRF] /sensor_log.txt line 43/1000
+[12:28:43.111]: [NRF] /sensor_log.txt line 44/1000
+[12:28:43.210]: [NRF] /sensor_log.txt line 45/1000
+[12:28:43.308]: [NRF] /sensor_log.txt line 46/1000
+[12:28:43.405]: [NRF] /sensor_log.txt line 47/1000
+[12:28:43.504]: [NRF] /sensor_log.txt line 48/1000
+[12:28:43.602]: [NRF] /sensor_log.txt line 49/1000
+[12:28:43.701]: [NRF] /sensor_log.txt line 50/1000
+[12:28:43.799]: [NRF] /sensor_log.txt line 51/1000
+[12:28:43.897]: [NRF] /sensor_log.txt line 52/1000
+[12:28:43.996]: [NRF] /sensor_log.txt line 53/1000
+[12:28:44.094]: [NRF] /sensor_log.txt line 54/1000
+[12:28:44.193]: [NRF] /sensor_log.txt line 55/1000
+[12:28:44.291]: [NRF] /sensor_log.txt line 56/1000
+[12:28:44.389]: [NRF] /sensor_log.txt line 57/1000
+[12:28:44.487]: [NRF] /sensor_log.txt line 58/1000
+[12:28:44.585]: [NRF] /sensor_log.txt line 59/1000
+[12:28:44.682]: [NRF] /sensor_log.txt line 60/1000
+[12:28:44.780]: [NRF] /sensor_log.txt line 61/1000
+[12:28:44.878]: [NRF] /sensor_log.txt line 62/1000
+[12:28:44.977]: [NRF] /sensor_log.txt line 63/1000
+[12:28:45.075]: [NRF] /sensor_log.txt line 64/1000
+[12:28:45.173]: [NRF] /sensor_log.txt line 65/1000
+[12:28:45.271]: [NRF] /sensor_log.txt line 66/1000
+[12:28:45.369]: [NRF] /sensor_log.txt line 67/1000
+[12:28:45.467]: [NRF] /sensor_log.txt line 68/1000
+[12:28:45.568]: [NRF] /sensor_log.txt line 69/1000
+[12:28:45.667]: [NRF] /sensor_log.txt line 70/1000
+[12:28:45.765]: [NRF] /sensor_log.txt line 71/1000
+[12:28:45.863]: [NRF] /sensor_log.txt line 72/1000
+[12:28:45.961]: [NRF] /sensor_log.txt line 73/1000
+[12:28:46.059]: [NRF] /sensor_log.txt line 74/1000
+[12:28:46.158]: [NRF] /sensor_log.txt line 75/1000
+[12:28:46.255]: [NRF] /sensor_log.txt line 76/1000
+[12:28:46.354]: [NRF] /sensor_log.txt line 77/1000
+[12:28:46.452]: [NRF] /sensor_log.txt line 78/1000
+[12:28:46.550]: [NRF] /sensor_log.txt line 79/1000
+[12:28:46.648]: [NRF] /sensor_log.txt line 80/1000
+[12:28:46.747]: [NRF] /sensor_log.txt line 81/1000
+[12:28:46.845]: [NRF] /sensor_log.txt line 82/1000
+[12:28:46.943]: [NRF] /sensor_log.txt line 83/1000
+[12:28:47.041]: [NRF] /sensor_log.txt line 84/1000
+[12:28:47.139]: [NRF] /sensor_log.txt line 85/1000
+[12:28:47.237]: [NRF] /sensor_log.txt line 86/1000
+[12:28:47.335]: [NRF] /sensor_log.txt line 87/1000
+[12:28:47.432]: [NRF] /sensor_log.txt line 88/1000
+[12:28:47.531]: [NRF] /sensor_log.txt line 89/1000
+[12:28:47.630]: [NRF] /sensor_log.txt line 90/1000
+[12:28:47.728]: [NRF] /sensor_log.txt line 91/1000
+[12:28:47.826]: [NRF] /sensor_log.txt line 92/1000
+[12:28:47.924]: [NRF] /sensor_log.txt line 93/1000
+[12:28:48.022]: [NRF] /sensor_log.txt line 94/1000
+[12:28:48.120]: [NRF] /sensor_log.txt line 95/1000
+[12:28:48.218]: [NRF] /sensor_log.txt line 96/1000
+[12:28:48.316]: [NRF] /sensor_log.txt line 97/1000
+[12:28:48.415]: [NRF] /sensor_log.txt line 98/1000
+[12:28:48.513]: [NRF] /sensor_log.txt line 99/1000
+[12:28:48.611]: [NRF] /sensor_log.txt line 100/1000
+[12:28:48.710]: [NRF] /sensor_log.txt line 101/1000
+[12:28:48.808]: [NRF] /sensor_log.txt line 102/1000
+[12:28:48.906]: [NRF] /sensor_log.txt line 103/1000
+[12:28:49.004]: [NRF] /sensor_log.txt line 104/1000
+[12:28:49.103]: [NRF] /sensor_log.txt line 105/1000
+[12:28:49.201]: [NRF] /sensor_log.txt line 106/1000
+[12:28:49.298]: [NRF] /sensor_log.txt line 107/1000
+[12:28:49.397]: [NRF] /sensor_log.txt line 108/1000
+[12:28:49.494]: [NRF] /sensor_log.txt line 109/1000
+[12:28:49.592]: [NRF] /sensor_log.txt line 110/1000
+[12:28:49.691]: [NRF] /sensor_log.txt line 111/1000
+[12:28:49.789]: [NRF] /sensor_log.txt line 112/1000
+[12:28:49.888]: [NRF] /sensor_log.txt line 113/1000
+[12:28:49.986]: [NRF] /sensor_log.txt line 114/1000
+[12:28:50.084]: [NRF] /sensor_log.txt line 115/1000
+[12:28:50.181]: [NRF] /sensor_log.txt line 116/1000
+[12:28:50.279]: [NRF] /sensor_log.txt line 117/1000
+[12:28:50.378]: [NRF] /sensor_log.txt line 118/1000
+[12:28:50.476]: [NRF] /sensor_log.txt line 119/1000
+[12:28:50.574]: [NRF] /sensor_log.txt line 120/1000
+[12:28:50.672]: [NRF] /sensor_log.txt line 121/1000
+[12:28:50.770]: [NRF] /sensor_log.txt line 122/1000
+[12:28:50.868]: [NRF] /sensor_log.txt line 123/1000
+[12:28:50.966]: [NRF] /sensor_log.txt line 124/1000
+[12:28:51.064]: [NRF] /sensor_log.txt line 125/1000
+[12:28:51.162]: [NRF] /sensor_log.txt line 126/1000
+[12:28:51.260]: [NRF] /sensor_log.txt line 127/1000
+[12:28:51.358]: [NRF] /sensor_log.txt line 128/1000
+[12:28:51.456]: [NRF] /sensor_log.txt line 129/1000
+[12:28:51.554]: [NRF] /sensor_log.txt line 130/1000
+[12:28:51.652]: [NRF] /sensor_log.txt line 131/1000
+[12:28:51.750]: [NRF] /sensor_log.txt line 132/1000
+[12:28:51.848]: [NRF] /sensor_log.txt line 133/1000
+[12:28:51.946]: [NRF] /sensor_log.txt line 134/1000
+[12:28:52.044]: [NRF] /sensor_log.txt line 135/1000
+[12:28:52.142]: [NRF] /sensor_log.txt line 136/1000
+[12:28:52.240]: [NRF] /sensor_log.txt line 137/1000
+[12:28:52.338]: [NRF] /sensor_log.txt line 138/1000
+[12:28:52.436]: [NRF] /sensor_log.txt line 139/1000
+[12:28:52.534]: [NRF] /sensor_log.txt line 140/1000
+[12:28:52.633]: [NRF] /sensor_log.txt line 141/1000
+[12:28:52.731]: [NRF] /sensor_log.txt line 142/1000
+[12:28:52.829]: [NRF] /sensor_log.txt line 143/1000
+[12:28:53.030]: [264226ms] [WARN] Retry 1 line=143 chunk=0
+[12:28:53.330]: [264526ms] [WARN] Retry 2 line=143 chunk=0
+[12:28:53.731]: [264927ms] [WARN] Retry 3 line=143 chunk=0
+[12:28:53.830]: [NRF] /sensor_log.txt line 144/1000
+[12:28:53.928]: [NRF] /sensor_log.txt line 145/1000
+[12:28:54.027]: [NRF] /sensor_log.txt line 146/1000
+[12:28:54.125]: [NRF] /sensor_log.txt line 147/1000
+[12:28:54.223]: [NRF] /sensor_log.txt line 148/1000
+[12:28:54.322]: [NRF] /sensor_log.txt line 149/1000
+[12:28:54.420]: [NRF] /sensor_log.txt line 150/1000
+[12:28:54.518]: [NRF] /sensor_log.txt line 151/1000
+[12:28:54.616]: [NRF] /sensor_log.txt line 152/1000
+[12:28:54.714]: [NRF] /sensor_log.txt line 153/1000
+[12:28:54.812]: [NRF] /sensor_log.txt line 154/1000
+[12:28:54.910]: [NRF] /sensor_log.txt line 155/1000
+[12:28:55.008]: [NRF] /sensor_log.txt line 156/1000
+[12:28:55.106]: [NRF] /sensor_log.txt line 157/1000
+[12:28:55.204]: [NRF] /sensor_log.txt line 158/1000
+[12:28:55.302]: [NRF] /sensor_log.txt line 159/1000
+[12:28:55.400]: [NRF] /sensor_log.txt line 160/1000
+[12:28:55.499]: [NRF] /sensor_log.txt line 161/1000
+[12:28:55.597]: [NRF] /sensor_log.txt line 162/1000
+[12:28:55.695]: [NRF] /sensor_log.txt line 163/1000
+[12:28:55.792]: [NRF] /sensor_log.txt line 164/1000
+[12:28:55.891]: [NRF] /sensor_log.txt line 165/1000
+[12:28:55.990]: [NRF] /sensor_log.txt line 166/1000
+[12:28:56.088]: [NRF] /sensor_log.txt line 167/1000
+[12:28:56.186]: [NRF] /sensor_log.txt line 168/1000
+[12:28:56.284]: [NRF] /sensor_log.txt line 169/1000
+[12:28:56.382]: [NRF] /sensor_log.txt line 170/1000
+[12:28:56.480]: [NRF] /sensor_log.txt line 171/1000
+[12:28:56.578]: [NRF] /sensor_log.txt line 172/1000
+[12:28:56.676]: [NRF] /sensor_log.txt line 173/1000
+[12:28:56.774]: [NRF] /sensor_log.txt line 174/1000
+[12:28:56.872]: [NRF] /sensor_log.txt line 175/1000
+[12:28:56.970]: [NRF] /sensor_log.txt line 176/1000
+[12:28:57.068]: [NRF] /sensor_log.txt line 177/1000
+[12:28:57.166]: [NRF] /sensor_log.txt line 178/1000
+[12:28:57.265]: [NRF] /sensor_log.txt line 179/1000
+[12:28:57.363]: [NRF] /sensor_log.txt line 180/1000
+[12:28:57.462]: [NRF] /sensor_log.txt line 181/1000
+[12:28:57.560]: [NRF] /sensor_log.txt line 182/1000
+[12:28:57.658]: [NRF] /sensor_log.txt line 183/1000
+[12:28:57.757]: [NRF] /sensor_log.txt line 184/1000
+[12:28:57.855]: [NRF] /sensor_log.txt line 185/1000
+[12:28:57.953]: [NRF] /sensor_log.txt line 186/1000
+[12:28:58.051]: [NRF] /sensor_log.txt line 187/1000
+[12:28:58.149]: [NRF] /sensor_log.txt line 188/1000
+[12:28:58.247]: [NRF] /sensor_log.txt line 189/1000
+[12:28:58.345]: [NRF] /sensor_log.txt line 190/1000
+[12:28:58.444]: [NRF] /sensor_log.txt line 191/1000
+[12:28:58.542]: [NRF] /sensor_log.txt line 192/1000
+[12:28:58.640]: [NRF] /sensor_log.txt line 193/1000
+[12:28:58.738]: [NRF] /sensor_log.txt line 194/1000
+[12:28:58.837]: [NRF] /sensor_log.txt line 195/1000
+[12:28:58.935]: [NRF] /sensor_log.txt line 196/1000
+[12:28:59.033]: [NRF] /sensor_log.txt line 197/1000
+[12:28:59.131]: [NRF] /sensor_log.txt line 198/1000
+[12:28:59.229]: [NRF] /sensor_log.txt line 199/1000
+[12:28:59.354]: [NRF] /sensor_log.txt line 200/1000
+[12:28:59.452]: [NRF] /sensor_log.txt line 201/1000
+[12:28:59.550]: [NRF] /sensor_log.txt line 202/1000
+[12:28:59.649]: [NRF] /sensor_log.txt line 203/1000
+[12:28:59.849]: [271045ms] [WARN] Retry 1 line=203 chunk=0
+[12:29:00.150]: [271346ms] [WARN] Retry 2 line=203 chunk=0
+[12:29:00.248]: [NRF] /sensor_log.txt line 204/1000
+[12:29:00.346]: [NRF] /sensor_log.txt line 205/1000
+[12:29:00.445]: [NRF] /sensor_log.txt line 206/1000
+[12:29:00.542]: [NRF] /sensor_log.txt line 207/1000
+[12:29:00.641]: [NRF] /sensor_log.txt line 208/1000
+[12:29:00.739]: [NRF] /sensor_log.txt line 209/1000
+[12:29:00.837]: [NRF] /sensor_log.txt line 210/1000
+[12:29:00.935]: [NRF] /sensor_log.txt line 211/1000
+[12:29:01.033]: [NRF] /sensor_log.txt line 212/1000
+[12:29:01.131]: [NRF] /sensor_log.txt line 213/1000
+[12:29:01.229]: [NRF] /sensor_log.txt line 214/1000
+[12:29:01.327]: [NRF] /sensor_log.txt line 215/1000
+[12:29:01.425]: [NRF] /sensor_log.txt line 216/1000
+[12:29:01.523]: [NRF] /sensor_log.txt line 217/1000
+[12:29:01.621]: [NRF] /sensor_log.txt line 218/1000
+[12:29:01.719]: [NRF] /sensor_log.txt line 219/1000
+[12:29:01.817]: [NRF] /sensor_log.txt line 220/1000
+[12:29:01.915]: [NRF] /sensor_log.txt line 221/1000
+[12:29:02.013]: [NRF] /sensor_log.txt line 222/1000
+[12:29:02.111]: [NRF] /sensor_log.txt line 223/1000
+[12:29:02.209]: [NRF] /sensor_log.txt line 224/1000
+[12:29:02.307]: [NRF] /sensor_log.txt line 225/1000
+[12:29:02.406]: [NRF] /sensor_log.txt line 226/1000
+[12:29:02.504]: [NRF] /sensor_log.txt line 227/1000
+[12:29:02.602]: [NRF] /sensor_log.txt line 228/1000
+[12:29:02.700]: [NRF] /sensor_log.txt line 229/1000
+[12:29:02.798]: [NRF] /sensor_log.txt line 230/1000
+[12:29:02.896]: [NRF] /sensor_log.txt line 231/1000
+[12:29:02.995]: [NRF] /sensor_log.txt line 232/1000
+[12:29:03.093]: [NRF] /sensor_log.txt line 233/1000
+[12:29:03.191]: [NRF] /sensor_log.txt line 234/1000
+[12:29:03.289]: [NRF] /sensor_log.txt line 235/1000
+[12:29:03.387]: [NRF] /sensor_log.txt line 236/1000
+[12:29:03.485]: [NRF] /sensor_log.txt line 237/1000
+[12:29:03.583]: [NRF] /sensor_log.txt line 238/1000
+[12:29:03.682]: [NRF] /sensor_log.txt line 239/1000
+[12:29:03.780]: [NRF] /sensor_log.txt line 240/1000
+[12:29:03.878]: [NRF] /sensor_log.txt line 241/1000
+[12:29:03.976]: [NRF] /sensor_log.txt line 242/1000
+[12:29:04.074]: [NRF] /sensor_log.txt line 243/1000
+[12:29:04.172]: [NRF] /sensor_log.txt line 244/1000
+[12:29:04.270]: [NRF] /sensor_log.txt line 245/1000
+[12:29:04.368]: [NRF] /sensor_log.txt line 246/1000
+[12:29:04.466]: [NRF] /sensor_log.txt line 247/1000
+[12:29:04.564]: [NRF] /sensor_log.txt line 248/1000
+[12:29:04.663]: [NRF] /sensor_log.txt line 249/1000
+[12:29:04.761]: [NRF] /sensor_log.txt line 250/1000
+[12:29:04.858]: [NRF] /sensor_log.txt line 251/1000
+[12:29:04.957]: [NRF] /sensor_log.txt line 252/1000
+[12:29:05.055]: [NRF] /sensor_log.txt line 253/1000
+[12:29:05.153]: [NRF] /sensor_log.txt line 254/1000
+[12:29:05.252]: [NRF] /sensor_log.txt line 255/1000
+[12:29:05.350]: [NRF] /sensor_log.txt line 256/1000
+[12:29:05.448]: [NRF] /sensor_log.txt line 257/1000
+[12:29:05.546]: [NRF] /sensor_log.txt line 258/1000
+[12:29:05.644]: [NRF] /sensor_log.txt line 259/1000
+[12:29:05.742]: [NRF] /sensor_log.txt line 260/1000
+[12:29:05.840]: [NRF] /sensor_log.txt line 261/1000
+[12:29:05.938]: [NRF] /sensor_log.txt line 262/1000
+[12:29:06.038]: [NRF] /sensor_log.txt line 263/1000
+[12:29:06.136]: [NRF] /sensor_log.txt line 264/1000
+[12:29:06.234]: [NRF] /sensor_log.txt line 265/1000
+[12:29:06.332]: [NRF] /sensor_log.txt line 266/1000
+[12:29:06.430]: [NRF] /sensor_log.txt line 267/1000
+[12:29:06.529]: [NRF] /sensor_log.txt line 268/1000
+[12:29:06.627]: [NRF] /sensor_log.txt line 269/1000
+[12:29:06.725]: [NRF] /sensor_log.txt line 270/1000
+[12:29:06.823]: [NRF] /sensor_log.txt line 271/1000
+[12:29:06.921]: [NRF] /sensor_log.txt line 272/1000
+[12:29:07.019]: [NRF] /sensor_log.txt line 273/1000
+[12:29:07.117]: [NRF] /sensor_log.txt line 274/1000
+[12:29:07.215]: [NRF] /sensor_log.txt line 275/1000
+[12:29:07.314]: [NRF] /sensor_log.txt line 276/1000
+[12:29:07.412]: [NRF] /sensor_log.txt line 277/1000
+[12:29:07.510]: [NRF] /sensor_log.txt line 278/1000
+[12:29:07.607]: [NRF] /sensor_log.txt line 279/1000
+[12:29:07.706]: [NRF] /sensor_log.txt line 280/1000
+[12:29:07.804]: [NRF] /sensor_log.txt line 281/1000
+[12:29:07.903]: [NRF] /sensor_log.txt line 282/1000
+[12:29:08.005]: [NRF] /sensor_log.txt line 283/1000
+[12:29:08.103]: [NRF] /sensor_log.txt line 284/1000
+[12:29:08.201]: [NRF] /sensor_log.txt line 285/1000
+[12:29:08.300]: [NRF] /sensor_log.txt line 286/1000
+[12:29:08.398]: [NRF] /sensor_log.txt line 287/1000
+[12:29:08.496]: [NRF] /sensor_log.txt line 288/1000
+[12:29:08.595]: [NRF] /sensor_log.txt line 289/1000
+[12:29:08.692]: [NRF] /sensor_log.txt line 290/1000
+[12:29:08.791]: [NRF] /sensor_log.txt line 291/1000
+[12:29:08.889]: [NRF] /sensor_log.txt line 292/1000
+[12:29:08.987]: [NRF] /sensor_log.txt line 293/1000
+[12:29:09.086]: [NRF] /sensor_log.txt line 294/1000
+[12:29:09.184]: [NRF] /sensor_log.txt line 295/1000
+[12:29:09.282]: [NRF] /sensor_log.txt line 296/1000
+[12:29:09.380]: [NRF] /sensor_log.txt line 297/1000
+[12:29:09.478]: [NRF] /sensor_log.txt line 298/1000
+[12:29:09.576]: [NRF] /sensor_log.txt line 299/1000
+[12:29:09.674]: [NRF] /sensor_log.txt line 300/1000
+[12:29:09.772]: [NRF] /sensor_log.txt line 301/1000
+[12:29:09.870]: [NRF] /sensor_log.txt line 302/1000
+[12:29:09.968]: [NRF] /sensor_log.txt line 303/1000
+[12:29:10.067]: [NRF] /sensor_log.txt line 304/1000
+[12:29:10.165]: [NRF] /sensor_log.txt line 305/1000
+[12:29:10.262]: [NRF] /sensor_log.txt line 306/1000
+[12:29:10.360]: [NRF] /sensor_log.txt line 307/1000
+[12:29:10.459]: [NRF] /sensor_log.txt line 308/1000
+[12:29:10.557]: [NRF] /sensor_log.txt line 309/1000
+[12:29:10.655]: [NRF] /sensor_log.txt line 310/1000
+[12:29:10.753]: [NRF] /sensor_log.txt line 311/1000
+[12:29:10.851]: [NRF] /sensor_log.txt line 312/1000
+[12:29:10.949]: [NRF] /sensor_log.txt line 313/1000
+[12:29:11.047]: [NRF] /sensor_log.txt line 314/1000
+[12:29:11.145]: [NRF] /sensor_log.txt line 315/1000
+[12:29:11.244]: [NRF] /sensor_log.txt line 316/1000
+[12:29:11.342]: [NRF] /sensor_log.txt line 317/1000
+[12:29:11.440]: [NRF] /sensor_log.txt line 318/1000
+[12:29:11.538]: [NRF] /sensor_log.txt line 319/1000
+[12:29:11.636]: [NRF] /sensor_log.txt line 320/1000
+[12:29:11.735]: [NRF] /sensor_log.txt line 321/1000
+[12:29:11.832]: [NRF] /sensor_log.txt line 322/1000
+[12:29:11.930]: [NRF] /sensor_log.txt line 323/1000
+[12:29:12.028]: [NRF] /sensor_log.txt line 324/1000
+[12:29:12.126]: [NRF] /sensor_log.txt line 325/1000
+[12:29:12.225]: [NRF] /sensor_log.txt line 326/1000
+[12:29:12.323]: [NRF] /sensor_log.txt line 327/1000
+[12:29:12.421]: [NRF] /sensor_log.txt line 328/1000
+[12:29:12.518]: [NRF] /sensor_log.txt line 329/1000
+[12:29:12.617]: [NRF] /sensor_log.txt line 330/1000
+[12:29:12.715]: [NRF] /sensor_log.txt line 331/1000
+[12:29:12.814]: [NRF] /sensor_log.txt line 332/1000
+[12:29:12.912]: [NRF] /sensor_log.txt line 333/1000
+[12:29:13.010]: [NRF] /sensor_log.txt line 334/1000
+[12:29:13.108]: [NRF] /sensor_log.txt line 335/1000
+[12:29:13.206]: [NRF] /sensor_log.txt line 336/1000
+[12:29:13.304]: [NRF] /sensor_log.txt line 337/1000
+[12:29:13.402]: [NRF] /sensor_log.txt line 338/1000
+[12:29:13.500]: [NRF] /sensor_log.txt line 339/1000
+[12:29:13.598]: [NRF] /sensor_log.txt line 340/1000
+[12:29:13.696]: [NRF] /sensor_log.txt line 341/1000
+[12:29:13.794]: [NRF] /sensor_log.txt line 342/1000
+[12:29:13.893]: [NRF] /sensor_log.txt line 343/1000
+[12:29:13.991]: [NRF] /sensor_log.txt line 344/1000
+[12:29:14.088]: [NRF] /sensor_log.txt line 345/1000
+[12:29:14.186]: [NRF] /sensor_log.txt line 346/1000
+[12:29:14.285]: [NRF] /sensor_log.txt line 347/1000
+[12:29:14.383]: [NRF] /sensor_log.txt line 348/1000
+[12:29:14.481]: [NRF] /sensor_log.txt line 349/1000
+[12:29:14.579]: [NRF] /sensor_log.txt line 350/1000
+[12:29:14.677]: [NRF] /sensor_log.txt line 351/1000
+[12:29:14.775]: [NRF] /sensor_log.txt line 352/1000
+[12:29:14.872]: [NRF] /sensor_log.txt line 353/1000
+[12:29:14.971]: [NRF] /sensor_log.txt line 354/1000
+[12:29:15.068]: [NRF] /sensor_log.txt line 355/1000
+[12:29:15.167]: [NRF] /sensor_log.txt line 356/1000
+[12:29:15.265]: [NRF] /sensor_log.txt line 357/1000
+[12:29:15.363]: [NRF] /sensor_log.txt line 358/1000
+[12:29:15.460]: [NRF] /sensor_log.txt line 359/1000
+[12:29:15.559]: [NRF] /sensor_log.txt line 360/1000
+[12:29:15.657]: [NRF] /sensor_log.txt line 361/1000
+[12:29:15.755]: [NRF] /sensor_log.txt line 362/1000
+[12:29:15.853]: [NRF] /sensor_log.txt line 363/1000
+[12:29:15.951]: [NRF] /sensor_log.txt line 364/1000
+[12:29:16.050]: [NRF] /sensor_log.txt line 365/1000
+[12:29:16.148]: [NRF] /sensor_log.txt line 366/1000
+[12:29:16.247]: [NRF] /sensor_log.txt line 367/1000
+[12:29:16.345]: [NRF] /sensor_log.txt line 368/1000
+[12:29:16.443]: [NRF] /sensor_log.txt line 369/1000
+[12:29:16.541]: [NRF] /sensor_log.txt line 370/1000
+[12:29:16.639]: [NRF] /sensor_log.txt line 371/1000
+[12:29:16.738]: [NRF] /sensor_log.txt line 372/1000
+[12:29:16.835]: [NRF] /sensor_log.txt line 373/1000
+[12:29:16.934]: [NRF] /sensor_log.txt line 374/1000
+[12:29:17.033]: [NRF] /sensor_log.txt line 375/1000
+[12:29:17.131]: [NRF] /sensor_log.txt line 376/1000
+[12:29:17.229]: [NRF] /sensor_log.txt line 377/1000
+[12:29:17.330]: [NRF] /sensor_log.txt line 378/1000
+[12:29:17.428]: [NRF] /sensor_log.txt line 379/1000
+[12:29:17.526]: [NRF] /sensor_log.txt line 380/1000
+[12:29:17.625]: [NRF] /sensor_log.txt line 381/1000
+[12:29:17.724]: [NRF] /sensor_log.txt line 382/1000
+[12:29:17.822]: [NRF] /sensor_log.txt line 383/1000
+[12:29:17.920]: [NRF] /sensor_log.txt line 384/1000
+[12:29:18.018]: [NRF] /sensor_log.txt line 385/1000
+[12:29:18.117]: [NRF] /sensor_log.txt line 386/1000
+[12:29:18.215]: [NRF] /sensor_log.txt line 387/1000
+[12:29:18.313]: [NRF] /sensor_log.txt line 388/1000
+[12:29:18.411]: [NRF] /sensor_log.txt line 389/1000
+[12:29:18.509]: [NRF] /sensor_log.txt line 390/1000
+[12:29:18.607]: [NRF] /sensor_log.txt line 391/1000
+[12:29:18.705]: [NRF] /sensor_log.txt line 392/1000
+[12:29:18.803]: [NRF] /sensor_log.txt line 393/1000
+[12:29:18.902]: [NRF] /sensor_log.txt line 394/1000
+[12:29:19.000]: [NRF] /sensor_log.txt line 395/1000
+[12:29:19.098]: [NRF] /sensor_log.txt line 396/1000
+[12:29:19.196]: [NRF] /sensor_log.txt line 397/1000
+[12:29:19.294]: [NRF] /sensor_log.txt line 398/1000
+[12:29:19.392]: [NRF] /sensor_log.txt line 399/1000
+[12:29:19.490]: [NRF] /sensor_log.txt line 400/1000
+[12:29:19.588]: [NRF] /sensor_log.txt line 401/1000
+[12:29:19.686]: [NRF] /sensor_log.txt line 402/1000
+[12:29:19.784]: [NRF] /sensor_log.txt line 403/1000
+[12:29:19.890]: [NRF] /sensor_log.txt line 404/1000
+[12:29:19.990]: [NRF] /sensor_log.txt line 405/1000
+[12:29:20.088]: [NRF] /sensor_log.txt line 406/1000
+[12:29:20.186]: [NRF] /sensor_log.txt line 407/1000
+[12:29:20.285]: [NRF] /sensor_log.txt line 408/1000
+[12:29:20.383]: [NRF] /sensor_log.txt line 409/1000
+[12:29:20.481]: [NRF] /sensor_log.txt line 410/1000
+[12:29:20.579]: [NRF] /sensor_log.txt line 411/1000
+[12:29:20.677]: [NRF] /sensor_log.txt line 412/1000
+[12:29:20.775]: [NRF] /sensor_log.txt line 413/1000
+[12:29:20.874]: [NRF] /sensor_log.txt line 414/1000
+[12:29:20.972]: [NRF] /sensor_log.txt line 415/1000
+[12:29:21.070]: [NRF] /sensor_log.txt line 416/1000
+[12:29:21.169]: [NRF] /sensor_log.txt line 417/1000
+[12:29:21.267]: [NRF] /sensor_log.txt line 418/1000
+[12:29:21.365]: [NRF] /sensor_log.txt line 419/1000
+[12:29:21.463]: [NRF] /sensor_log.txt line 420/1000
+[12:29:21.561]: [NRF] /sensor_log.txt line 421/1000
+[12:29:21.659]: [NRF] /sensor_log.txt line 422/1000
+[12:29:21.758]: [NRF] /sensor_log.txt line 423/1000
+[12:29:21.864]: [NRF] /sensor_log.txt line 424/1000
+[12:29:21.962]: [NRF] /sensor_log.txt line 425/1000
+[12:29:22.061]: [NRF] /sensor_log.txt line 426/1000
+[12:29:22.159]: [NRF] /sensor_log.txt line 427/1000
+[12:29:22.259]: [NRF] /sensor_log.txt line 428/1000
+[12:29:22.358]: [NRF] /sensor_log.txt line 429/1000
+[12:29:22.459]: [NRF] /sensor_log.txt line 430/1000
+[12:29:22.559]: [NRF] /sensor_log.txt line 431/1000
+[12:29:22.657]: [NRF] /sensor_log.txt line 432/1000
+[12:29:22.755]: [NRF] /sensor_log.txt line 433/1000
+[12:29:22.854]: [NRF] /sensor_log.txt line 434/1000
+[12:29:22.952]: [NRF] /sensor_log.txt line 435/1000
+[12:29:23.051]: [NRF] /sensor_log.txt line 436/1000
+[12:29:23.149]: [NRF] /sensor_log.txt line 437/1000
+[12:29:23.246]: [NRF] /sensor_log.txt line 438/1000
+[12:29:23.345]: [NRF] /sensor_log.txt line 439/1000
+[12:29:23.442]: [NRF] /sensor_log.txt line 440/1000
+[12:29:23.541]: [NRF] /sensor_log.txt line 441/1000
+[12:29:23.639]: [NRF] /sensor_log.txt line 442/1000
+[12:29:23.737]: [NRF] /sensor_log.txt line 443/1000
+[12:29:23.835]: [NRF] /sensor_log.txt line 444/1000
+[12:29:23.933]: [NRF] /sensor_log.txt line 445/1000
+[12:29:24.031]: [NRF] /sensor_log.txt line 446/1000
+[12:29:24.129]: [NRF] /sensor_log.txt line 447/1000
+[12:29:24.227]: [NRF] /sensor_log.txt line 448/1000
+[12:29:24.326]: [NRF] /sensor_log.txt line 449/1000
+[12:29:24.424]: [NRF] /sensor_log.txt line 450/1000
+[12:29:24.522]: [NRF] /sensor_log.txt line 451/1000
+[12:29:24.620]: [NRF] /sensor_log.txt line 452/1000
+[12:29:24.718]: [NRF] /sensor_log.txt line 453/1000
+[12:29:24.816]: [NRF] /sensor_log.txt line 454/1000
+[12:29:24.914]: [NRF] /sensor_log.txt line 455/1000
+[12:29:25.012]: [NRF] /sensor_log.txt line 456/1000
+[12:29:25.110]: [NRF] /sensor_log.txt line 457/1000
+[12:29:25.208]: [NRF] /sensor_log.txt line 458/1000
+[12:29:25.306]: [NRF] /sensor_log.txt line 459/1000
+[12:29:25.404]: [NRF] /sensor_log.txt line 460/1000
+[12:29:25.502]: [NRF] /sensor_log.txt line 461/1000
+[12:29:25.601]: [NRF] /sensor_log.txt line 462/1000
+[12:29:25.699]: [NRF] /sensor_log.txt line 463/1000
+[12:29:25.797]: [NRF] /sensor_log.txt line 464/1000
+[12:29:25.896]: [NRF] /sensor_log.txt line 465/1000
+[12:29:25.994]: [NRF] /sensor_log.txt line 466/1000
+[12:29:26.092]: [NRF] /sensor_log.txt line 467/1000
+[12:29:26.190]: [NRF] /sensor_log.txt line 468/1000
+[12:29:26.288]: [NRF] /sensor_log.txt line 469/1000
+[12:29:26.386]: [NRF] /sensor_log.txt line 470/1000
+[12:29:26.485]: [NRF] /sensor_log.txt line 471/1000
+[12:29:26.584]: [NRF] /sensor_log.txt line 472/1000
+[12:29:26.682]: [NRF] /sensor_log.txt line 473/1000
+[12:29:26.780]: [NRF] /sensor_log.txt line 474/1000
+[12:29:26.878]: [NRF] /sensor_log.txt line 475/1000
+[12:29:26.976]: [NRF] /sensor_log.txt line 476/1000
+[12:29:27.074]: [NRF] /sensor_log.txt line 477/1000
+[12:29:27.172]: [NRF] /sensor_log.txt line 478/1000
+[12:29:27.270]: [NRF] /sensor_log.txt line 479/1000
+[12:29:27.375]: [NRF] /sensor_log.txt line 480/1000
+[12:29:27.473]: [NRF] /sensor_log.txt line 481/1000
+[12:29:27.571]: [NRF] /sensor_log.txt line 482/1000
+[12:29:27.669]: [NRF] /sensor_log.txt line 483/1000
+[12:29:27.767]: [NRF] /sensor_log.txt line 484/1000
+[12:29:27.865]: [NRF] /sensor_log.txt line 485/1000
+[12:29:27.963]: [NRF] /sensor_log.txt line 486/1000
+[12:29:28.062]: [NRF] /sensor_log.txt line 487/1000
+[12:29:28.160]: [NRF] /sensor_log.txt line 488/1000
+[12:29:28.259]: [NRF] /sensor_log.txt line 489/1000
+[12:29:28.357]: [NRF] /sensor_log.txt line 490/1000
+[12:29:28.455]: [NRF] /sensor_log.txt line 491/1000
+[12:29:28.553]: [NRF] /sensor_log.txt line 492/1000
+[12:29:28.652]: [NRF] /sensor_log.txt line 493/1000
+[12:29:28.751]: [NRF] /sensor_log.txt line 494/1000
+[12:29:28.849]: [NRF] /sensor_log.txt line 495/1000
+[12:29:28.947]: [NRF] /sensor_log.txt line 496/1000
+[12:29:29.045]: [NRF] /sensor_log.txt line 497/1000
+[12:29:29.144]: [NRF] /sensor_log.txt line 498/1000
+[12:29:29.242]: [NRF] /sensor_log.txt line 499/1000
+[12:29:29.345]: [NRF] /sensor_log.txt line 500/1000
+[12:29:29.444]: [NRF] /sensor_log.txt line 501/1000
+[12:29:29.543]: [NRF] /sensor_log.txt line 502/1000
+[12:29:29.641]: [NRF] /sensor_log.txt line 503/1000
+[12:29:29.739]: [NRF] /sensor_log.txt line 504/1000
+[12:29:29.838]: [NRF] /sensor_log.txt line 505/1000
+[12:29:29.936]: [NRF] /sensor_log.txt line 506/1000
+[12:29:30.035]: [NRF] /sensor_log.txt line 507/1000
+[12:29:30.133]: [NRF] /sensor_log.txt line 508/1000
+[12:29:30.231]: [NRF] /sensor_log.txt line 509/1000
+[12:29:30.329]: [NRF] /sensor_log.txt line 510/1000
+[12:29:30.427]: [NRF] /sensor_log.txt line 511/1000
+[12:29:30.526]: [NRF] /sensor_log.txt line 512/1000
+[12:29:30.624]: [NRF] /sensor_log.txt line 513/1000
+[12:29:30.722]: [NRF] /sensor_log.txt line 514/1000
+[12:29:30.820]: [NRF] /sensor_log.txt line 515/1000
+[12:29:30.918]: [NRF] /sensor_log.txt line 516/1000
+[12:29:31.016]: [NRF] /sensor_log.txt line 517/1000
+[12:29:31.115]: [NRF] /sensor_log.txt line 518/1000
+[12:29:31.213]: [NRF] /sensor_log.txt line 519/1000
+[12:29:31.312]: [NRF] /sensor_log.txt line 520/1000
+[12:29:31.410]: [NRF] /sensor_log.txt line 521/1000
+[12:29:31.508]: [NRF] /sensor_log.txt line 522/1000
+[12:29:31.607]: [NRF] /sensor_log.txt line 523/1000
+[12:29:31.705]: [NRF] /sensor_log.txt line 524/1000
+[12:29:31.804]: [NRF] /sensor_log.txt line 525/1000
+[12:29:31.904]: [NRF] /sensor_log.txt line 526/1000
+[12:29:32.003]: [NRF] /sensor_log.txt line 527/1000
+[12:29:32.101]: [NRF] /sensor_log.txt line 528/1000
+[12:29:32.199]: [NRF] /sensor_log.txt line 529/1000
+[12:29:32.297]: [NRF] /sensor_log.txt line 530/1000
+[12:29:32.395]: [NRF] /sensor_log.txt line 531/1000
+[12:29:32.494]: [NRF] /sensor_log.txt line 532/1000
+[12:29:32.592]: [NRF] /sensor_log.txt line 533/1000
+[12:29:32.690]: [NRF] /sensor_log.txt line 534/1000
+[12:29:32.788]: [NRF] /sensor_log.txt line 535/1000
+[12:29:32.887]: [NRF] /sensor_log.txt line 536/1000
+[12:29:32.986]: [NRF] /sensor_log.txt line 537/1000
+[12:29:33.085]: [NRF] /sensor_log.txt line 538/1000
+[12:29:33.183]: [NRF] /sensor_log.txt line 539/1000
+[12:29:33.281]: [NRF] /sensor_log.txt line 540/1000
+[12:29:33.380]: [NRF] /sensor_log.txt line 541/1000
+[12:29:33.478]: [NRF] /sensor_log.txt line 542/1000
+[12:29:33.576]: [NRF] /sensor_log.txt line 543/1000
+[12:29:33.674]: [NRF] /sensor_log.txt line 544/1000
+[12:29:33.772]: [NRF] /sensor_log.txt line 545/1000
+[12:29:33.870]: [NRF] /sensor_log.txt line 546/1000
+[12:29:33.968]: [NRF] /sensor_log.txt line 547/1000
+[12:29:34.067]: [NRF] /sensor_log.txt line 548/1000
+[12:29:34.165]: [NRF] /sensor_log.txt line 549/1000
+[12:29:34.264]: [NRF] /sensor_log.txt line 550/1000
+[12:29:34.362]: [NRF] /sensor_log.txt line 551/1000
+[12:29:34.461]: [NRF] /sensor_log.txt line 552/1000
+[12:29:34.558]: [NRF] /sensor_log.txt line 553/1000
+[12:29:34.657]: [NRF] /sensor_log.txt line 554/1000
+[12:29:34.759]: [NRF] /sensor_log.txt line 555/1000
+[12:29:34.857]: [NRF] /sensor_log.txt line 556/1000
+[12:29:34.955]: [NRF] /sensor_log.txt line 557/1000
+[12:29:35.054]: [NRF] /sensor_log.txt line 558/1000
+[12:29:35.152]: [NRF] /sensor_log.txt line 559/1000
+[12:29:35.251]: [NRF] /sensor_log.txt line 560/1000
+[12:29:35.349]: [NRF] /sensor_log.txt line 561/1000
+[12:29:35.446]: [NRF] /sensor_log.txt line 562/1000
+[12:29:35.544]: [NRF] /sensor_log.txt line 563/1000
+[12:29:35.642]: [NRF] /sensor_log.txt line 564/1000
+[12:29:35.740]: [NRF] /sensor_log.txt line 565/1000
+[12:29:35.840]: [NRF] /sensor_log.txt line 566/1000
+[12:29:35.938]: [NRF] /sensor_log.txt line 567/1000
+[12:29:36.036]: [NRF] /sensor_log.txt line 568/1000
+[12:29:36.134]: [NRF] /sensor_log.txt line 569/1000
+[12:29:36.233]: [NRF] /sensor_log.txt line 570/1000
+[12:29:36.331]: [NRF] /sensor_log.txt line 571/1000
+[12:29:36.430]: [NRF] /sensor_log.txt line 572/1000
+[12:29:36.529]: [NRF] /sensor_log.txt line 573/1000
+[12:29:36.627]: [NRF] /sensor_log.txt line 574/1000
+[12:29:36.725]: [NRF] /sensor_log.txt line 575/1000
+[12:29:36.824]: [NRF] /sensor_log.txt line 576/1000
+[12:29:36.922]: [NRF] /sensor_log.txt line 577/1000
+[12:29:37.020]: [NRF] /sensor_log.txt line 578/1000
+[12:29:37.118]: [NRF] /sensor_log.txt line 579/1000
+[12:29:37.216]: [NRF] /sensor_log.txt line 580/1000
+[12:29:37.314]: [NRF] /sensor_log.txt line 581/1000
+[12:29:37.412]: [NRF] /sensor_log.txt line 582/1000
+[12:29:37.513]: [NRF] /sensor_log.txt line 583/1000
+[12:29:37.612]: [NRF] /sensor_log.txt line 584/1000
+[12:29:37.710]: [NRF] /sensor_log.txt line 585/1000
+[12:29:37.808]: [NRF] /sensor_log.txt line 586/1000
+[12:29:37.906]: [NRF] /sensor_log.txt line 587/1000
+[12:29:38.004]: [NRF] /sensor_log.txt line 588/1000
+[12:29:38.102]: [NRF] /sensor_log.txt line 589/1000
+[12:29:38.201]: [NRF] /sensor_log.txt line 590/1000
+[12:29:38.299]: [NRF] /sensor_log.txt line 591/1000
+[12:29:38.397]: [NRF] /sensor_log.txt line 592/1000
+[12:29:38.495]: [NRF] /sensor_log.txt line 593/1000
+[12:29:38.593]: [NRF] /sensor_log.txt line 594/1000
+[12:29:38.691]: [NRF] /sensor_log.txt line 595/1000
+[12:29:38.789]: [NRF] /sensor_log.txt line 596/1000
+[12:29:38.888]: [NRF] /sensor_log.txt line 597/1000
+[12:29:38.986]: [NRF] /sensor_log.txt line 598/1000
+[12:29:39.084]: [NRF] /sensor_log.txt line 599/1000
+[12:29:39.182]: [NRF] /sensor_log.txt line 600/1000
+[12:29:39.280]: [NRF] /sensor_log.txt line 601/1000
+[12:29:39.378]: [NRF] /sensor_log.txt line 602/1000
+[12:29:39.477]: [NRF] /sensor_log.txt line 603/1000
+[12:29:39.575]: [NRF] /sensor_log.txt line 604/1000
+[12:29:39.673]: [NRF] /sensor_log.txt line 605/1000
+[12:29:39.771]: [NRF] /sensor_log.txt line 606/1000
+[12:29:39.870]: [NRF] /sensor_log.txt line 607/1000
+[12:29:39.969]: [NRF] /sensor_log.txt line 608/1000
+[12:29:40.067]: [NRF] /sensor_log.txt line 609/1000
+[12:29:40.166]: [NRF] /sensor_log.txt line 610/1000
+[12:29:40.264]: [NRF] /sensor_log.txt line 611/1000
+[12:29:40.362]: [NRF] /sensor_log.txt line 612/1000
+[12:29:40.460]: [NRF] /sensor_log.txt line 613/1000
+[12:29:40.558]: [NRF] /sensor_log.txt line 614/1000
+[12:29:40.657]: [NRF] /sensor_log.txt line 615/1000
+[12:29:40.755]: [NRF] /sensor_log.txt line 616/1000
+[12:29:40.853]: [NRF] /sensor_log.txt line 617/1000
+[12:29:41.054]: [312250ms] [WARN] Retry 1 line=617 chunk=0
+[12:29:41.355]: [312551ms] [WARN] Retry 2 line=617 chunk=0
+[12:29:41.755]: [312951ms] [WARN] Retry 3 line=617 chunk=0
+[12:29:41.854]: [NRF] /sensor_log.txt line 618/1000
+[12:29:41.952]: [NRF] /sensor_log.txt line 619/1000
+[12:29:42.050]: [NRF] /sensor_log.txt line 620/1000
+[12:29:42.148]: [NRF] /sensor_log.txt line 621/1000
+[12:29:42.246]: [NRF] /sensor_log.txt line 622/1000
+[12:29:42.344]: [NRF] /sensor_log.txt line 623/1000
+[12:29:42.442]: [NRF] /sensor_log.txt line 624/1000
+[12:29:42.540]: [NRF] /sensor_log.txt line 625/1000
+[12:29:42.638]: [NRF] /sensor_log.txt line 626/1000
+[12:29:42.736]: [NRF] /sensor_log.txt line 627/1000
+[12:29:42.834]: [NRF] /sensor_log.txt line 628/1000
+[12:29:42.937]: [NRF] /sensor_log.txt line 629/1000
+[12:29:43.035]: [NRF] /sensor_log.txt line 630/1000
+[12:29:43.133]: [NRF] /sensor_log.txt line 631/1000
+[12:29:43.231]: [NRF] /sensor_log.txt line 632/1000
+[12:29:43.330]: [NRF] /sensor_log.txt line 633/1000
+[12:29:43.428]: [NRF] /sensor_log.txt line 634/1000
+[12:29:43.526]: [NRF] /sensor_log.txt line 635/1000
+[12:29:43.624]: [NRF] /sensor_log.txt line 636/1000
+[12:29:43.722]: [NRF] /sensor_log.txt line 637/1000
+[12:29:43.820]: [NRF] /sensor_log.txt line 638/1000
+[12:29:43.918]: [NRF] /sensor_log.txt line 639/1000
+[12:29:44.021]: [NRF] /sensor_log.txt line 640/1000
+[12:29:44.119]: [NRF] /sensor_log.txt line 641/1000
+[12:29:44.218]: [NRF] /sensor_log.txt line 642/1000
+[12:29:44.316]: [NRF] /sensor_log.txt line 643/1000
+[12:29:44.414]: [NRF] /sensor_log.txt line 644/1000
+[12:29:44.512]: [NRF] /sensor_log.txt line 645/1000
+[12:29:44.610]: [NRF] /sensor_log.txt line 646/1000
+[12:29:44.708]: [NRF] /sensor_log.txt line 647/1000
+[12:29:44.806]: [NRF] /sensor_log.txt line 648/1000
+[12:29:44.904]: [NRF] /sensor_log.txt line 649/1000
+[12:29:45.003]: [NRF] /sensor_log.txt line 650/1000
+[12:29:45.101]: [NRF] /sensor_log.txt line 651/1000
+[12:29:45.199]: [NRF] /sensor_log.txt line 652/1000
+[12:29:45.298]: [NRF] /sensor_log.txt line 653/1000
+[12:29:45.396]: [NRF] /sensor_log.txt line 654/1000
+[12:29:45.494]: [NRF] /sensor_log.txt line 655/1000
+[12:29:45.592]: [NRF] /sensor_log.txt line 656/1000
+[12:29:45.793]: [316989ms] [WARN] Retry 1 line=656 chunk=0
+[12:29:45.892]: [NRF] /sensor_log.txt line 657/1000
+[12:29:45.990]: [NRF] /sensor_log.txt line 658/1000
+[12:29:46.089]: [NRF] /sensor_log.txt line 659/1000
+[12:29:46.187]: [NRF] /sensor_log.txt line 660/1000
+[12:29:46.284]: [NRF] /sensor_log.txt line 661/1000
+[12:29:46.382]: [NRF] /sensor_log.txt line 662/1000
+[12:29:46.481]: [NRF] /sensor_log.txt line 663/1000
+[12:29:46.579]: [NRF] /sensor_log.txt line 664/1000
+[12:29:46.678]: [NRF] /sensor_log.txt line 665/1000
+[12:29:46.776]: [NRF] /sensor_log.txt line 666/1000
+[12:29:46.874]: [NRF] /sensor_log.txt line 667/1000
+[12:29:46.972]: [NRF] /sensor_log.txt line 668/1000
+[12:29:47.070]: [NRF] /sensor_log.txt line 669/1000
+[12:29:47.168]: [NRF] /sensor_log.txt line 670/1000
+[12:29:47.267]: [NRF] /sensor_log.txt line 671/1000
+[12:29:47.364]: [NRF] /sensor_log.txt line 672/1000
+[12:29:47.462]: [NRF] /sensor_log.txt line 673/1000
+[12:29:47.561]: [NRF] /sensor_log.txt line 674/1000
+[12:29:47.659]: [NRF] /sensor_log.txt line 675/1000
+[12:29:47.757]: [NRF] /sensor_log.txt line 676/1000
+[12:29:47.855]: [NRF] /sensor_log.txt line 677/1000
+[12:29:47.953]: [NRF] /sensor_log.txt line 678/1000
+[12:29:48.051]: [NRF] /sensor_log.txt line 679/1000
+[12:29:48.149]: [NRF] /sensor_log.txt line 680/1000
+[12:29:48.350]: [319546ms] [WARN] Retry 1 line=680 chunk=0
+[12:29:48.651]: [319847ms] [WARN] Retry 2 line=680 chunk=0
+[12:29:48.749]: [NRF] /sensor_log.txt line 681/1000
+[12:29:48.847]: [NRF] /sensor_log.txt line 682/1000
+[12:29:48.946]: [NRF] /sensor_log.txt line 683/1000
+[12:29:49.044]: [NRF] /sensor_log.txt line 684/1000
+[12:29:49.142]: [NRF] /sensor_log.txt line 685/1000
+[12:29:49.241]: [NRF] /sensor_log.txt line 686/1000
+[12:29:49.339]: [NRF] /sensor_log.txt line 687/1000
+[12:29:49.437]: [NRF] /sensor_log.txt line 688/1000
+[12:29:49.536]: [NRF] /sensor_log.txt line 689/1000
+[12:29:49.635]: [NRF] /sensor_log.txt line 690/1000
+[12:29:49.733]: [NRF] /sensor_log.txt line 691/1000
+[12:29:49.831]: [NRF] /sensor_log.txt line 692/1000
+[12:29:49.929]: [NRF] /sensor_log.txt line 693/1000
+[12:29:50.027]: [NRF] /sensor_log.txt line 694/1000
+[12:29:50.125]: [NRF] /sensor_log.txt line 695/1000
+[12:29:50.223]: [NRF] /sensor_log.txt line 696/1000
+[12:29:50.322]: [NRF] /sensor_log.txt line 697/1000
+[12:29:50.420]: [NRF] /sensor_log.txt line 698/1000
+[12:29:50.519]: [NRF] /sensor_log.txt line 699/1000
+[12:29:50.617]: [NRF] /sensor_log.txt line 700/1000
+[12:29:50.716]: [NRF] /sensor_log.txt line 701/1000
+[12:29:50.814]: [NRF] /sensor_log.txt line 702/1000
+[12:29:50.912]: [NRF] /sensor_log.txt line 703/1000
+[12:29:51.010]: [NRF] /sensor_log.txt line 704/1000
+[12:29:51.109]: [NRF] /sensor_log.txt line 705/1000
+[12:29:51.207]: [NRF] /sensor_log.txt line 706/1000
+[12:29:51.305]: [NRF] /sensor_log.txt line 707/1000
+[12:29:51.403]: [NRF] /sensor_log.txt line 708/1000
+[12:29:51.501]: [NRF] /sensor_log.txt line 709/1000
+[12:29:51.600]: [NRF] /sensor_log.txt line 710/1000
+[12:29:51.699]: [NRF] /sensor_log.txt line 711/1000
+[12:29:51.797]: [NRF] /sensor_log.txt line 712/1000
+[12:29:51.895]: [NRF] /sensor_log.txt line 713/1000
+[12:29:51.993]: [NRF] /sensor_log.txt line 714/1000
+[12:29:52.091]: [NRF] /sensor_log.txt line 715/1000
+[12:29:52.189]: [NRF] /sensor_log.txt line 716/1000
+[12:29:52.287]: [NRF] /sensor_log.txt line 717/1000
+[12:29:52.386]: [NRF] /sensor_log.txt line 718/1000
+[12:29:52.484]: [NRF] /sensor_log.txt line 719/1000
+[12:29:52.582]: [NRF] /sensor_log.txt line 720/1000
+[12:29:52.679]: [NRF] /sensor_log.txt line 721/1000
+[12:29:52.777]: [NRF] /sensor_log.txt line 722/1000
+[12:29:52.875]: [NRF] /sensor_log.txt line 723/1000
+[12:29:52.973]: [NRF] /sensor_log.txt line 724/1000
+[12:29:53.071]: [NRF] /sensor_log.txt line 725/1000
+[12:29:53.170]: [NRF] /sensor_log.txt line 726/1000
+[12:29:53.268]: [NRF] /sensor_log.txt line 727/1000
+[12:29:53.367]: [NRF] /sensor_log.txt line 728/1000
+[12:29:53.465]: [NRF] /sensor_log.txt line 729/1000
+[12:29:53.563]: [NRF] /sensor_log.txt line 730/1000
+[12:29:53.661]: [NRF] /sensor_log.txt line 731/1000
+[12:29:53.759]: [NRF] /sensor_log.txt line 732/1000
+[12:29:53.857]: [NRF] /sensor_log.txt line 733/1000
+[12:29:53.955]: [NRF] /sensor_log.txt line 734/1000
+[12:29:54.053]: [NRF] /sensor_log.txt line 735/1000
+[12:29:54.152]: [NRF] /sensor_log.txt line 736/1000
+[12:29:54.250]: [NRF] /sensor_log.txt line 737/1000
+[12:29:54.348]: [NRF] /sensor_log.txt line 738/1000
+[12:29:54.446]: [NRF] /sensor_log.txt line 739/1000
+[12:29:54.544]: [NRF] /sensor_log.txt line 740/1000
+[12:29:54.642]: [NRF] /sensor_log.txt line 741/1000
+[12:29:54.740]: [NRF] /sensor_log.txt line 742/1000
+[12:29:54.838]: [NRF] /sensor_log.txt line 743/1000
+[12:29:54.937]: [NRF] /sensor_log.txt line 744/1000
+[12:29:55.035]: [NRF] /sensor_log.txt line 745/1000
+[12:29:55.133]: [NRF] /sensor_log.txt line 746/1000
+[12:29:55.233]: [NRF] /sensor_log.txt line 747/1000
+[12:29:55.331]: [NRF] /sensor_log.txt line 748/1000
+[12:29:55.429]: [NRF] /sensor_log.txt line 749/1000
+[12:29:55.528]: [NRF] /sensor_log.txt line 750/1000
+[12:29:55.626]: [NRF] /sensor_log.txt line 751/1000
+[12:29:55.725]: [NRF] /sensor_log.txt line 752/1000
+[12:29:55.823]: [NRF] /sensor_log.txt line 753/1000
+[12:29:55.921]: [NRF] /sensor_log.txt line 754/1000
+[12:29:56.020]: [NRF] /sensor_log.txt line 755/1000
+[12:29:56.118]: [NRF] /sensor_log.txt line 756/1000
+[12:29:56.216]: [NRF] /sensor_log.txt line 757/1000
+[12:29:56.314]: [NRF] /sensor_log.txt line 758/1000
+[12:29:56.413]: [NRF] /sensor_log.txt line 759/1000
+[12:29:56.511]: [NRF] /sensor_log.txt line 760/1000
+[12:29:56.610]: [NRF] /sensor_log.txt line 761/1000
+[12:29:56.708]: [NRF] /sensor_log.txt line 762/1000
+[12:29:56.806]: [NRF] /sensor_log.txt line 763/1000
+[12:29:56.904]: [NRF] /sensor_log.txt line 764/1000
+[12:29:57.002]: [NRF] /sensor_log.txt line 765/1000
+[12:29:57.101]: [NRF] /sensor_log.txt line 766/1000
+[12:29:57.199]: [NRF] /sensor_log.txt line 767/1000
+[12:29:57.297]: [NRF] /sensor_log.txt line 768/1000
+[12:29:57.395]: [NRF] /sensor_log.txt line 769/1000
+[12:29:57.493]: [NRF] /sensor_log.txt line 770/1000
+[12:29:57.592]: [NRF] /sensor_log.txt line 771/1000
+[12:29:57.690]: [NRF] /sensor_log.txt line 772/1000
+[12:29:57.788]: [NRF] /sensor_log.txt line 773/1000
+[12:29:57.886]: [NRF] /sensor_log.txt line 774/1000
+[12:29:57.984]: [NRF] /sensor_log.txt line 775/1000
+[12:29:58.082]: [NRF] /sensor_log.txt line 776/1000
+[12:29:58.181]: [NRF] /sensor_log.txt line 777/1000
+[12:29:58.280]: [NRF] /sensor_log.txt line 778/1000
+[12:29:58.378]: [NRF] /sensor_log.txt line 779/1000
+[12:29:58.476]: [NRF] /sensor_log.txt line 780/1000
+[12:29:58.574]: [NRF] /sensor_log.txt line 781/1000
+[12:29:58.672]: [NRF] /sensor_log.txt line 782/1000
+[12:29:58.771]: [NRF] /sensor_log.txt line 783/1000
+[12:29:58.868]: [NRF] /sensor_log.txt line 784/1000
+[12:29:58.967]: [NRF] /sensor_log.txt line 785/1000
+[12:29:59.066]: [NRF] /sensor_log.txt line 786/1000
+[12:29:59.164]: [NRF] /sensor_log.txt line 787/1000
+[12:29:59.263]: [NRF] /sensor_log.txt line 788/1000
+[12:29:59.361]: [NRF] /sensor_log.txt line 789/1000
+[12:29:59.459]: [NRF] /sensor_log.txt line 790/1000
+[12:29:59.557]: [NRF] /sensor_log.txt line 791/1000
+[12:29:59.693]: [NRF] /sensor_log.txt line 792/1000
+[12:29:59.792]: [NRF] /sensor_log.txt line 793/1000
+[12:29:59.889]: [NRF] /sensor_log.txt line 794/1000
+[12:29:59.988]: [NRF] /sensor_log.txt line 795/1000
+[12:30:00.086]: [NRF] /sensor_log.txt line 796/1000
+[12:30:00.184]: [NRF] /sensor_log.txt line 797/1000
+[12:30:00.283]: [NRF] /sensor_log.txt line 798/1000
+[12:30:00.381]: [NRF] /sensor_log.txt line 799/1000
+[12:30:00.479]: [NRF] /sensor_log.txt line 800/1000
+[12:30:00.577]: [NRF] /sensor_log.txt line 801/1000
+[12:30:00.675]: [NRF] /sensor_log.txt line 802/1000
+[12:30:00.774]: [NRF] /sensor_log.txt line 803/1000
+[12:30:00.872]: [NRF] /sensor_log.txt line 804/1000
+[12:30:00.970]: [NRF] /sensor_log.txt line 805/1000
+[12:30:01.068]: [NRF] /sensor_log.txt line 806/1000
+[12:30:01.166]: [NRF] /sensor_log.txt line 807/1000
+[12:30:01.264]: [NRF] /sensor_log.txt line 808/1000
+[12:30:01.362]: [NRF] /sensor_log.txt line 809/1000
+[12:30:01.460]: [NRF] /sensor_log.txt line 810/1000
+[12:30:01.559]: [NRF] /sensor_log.txt line 811/1000
+[12:30:01.657]: [NRF] /sensor_log.txt line 812/1000
+[12:30:01.755]: [NRF] /sensor_log.txt line 813/1000
+[12:30:01.854]: [NRF] /sensor_log.txt line 814/1000
+[12:30:01.952]: [NRF] /sensor_log.txt line 815/1000
+[12:30:02.051]: [NRF] /sensor_log.txt line 816/1000
+[12:30:02.149]: [NRF] /sensor_log.txt line 817/1000
+[12:30:02.247]: [NRF] /sensor_log.txt line 818/1000
+[12:30:02.360]: [NRF] /sensor_log.txt line 819/1000
+[12:30:02.459]: [NRF] /sensor_log.txt line 820/1000
+[12:30:02.557]: [NRF] /sensor_log.txt line 821/1000
+[12:30:02.655]: [NRF] /sensor_log.txt line 822/1000
+[12:30:02.754]: [NRF] /sensor_log.txt line 823/1000
+[12:30:02.852]: [NRF] /sensor_log.txt line 824/1000
+[12:30:02.950]: [NRF] /sensor_log.txt line 825/1000
+[12:30:03.048]: [NRF] /sensor_log.txt line 826/1000
+[12:30:03.147]: [NRF] /sensor_log.txt line 827/1000
+[12:30:03.245]: [NRF] /sensor_log.txt line 828/1000
+[12:30:03.343]: [NRF] /sensor_log.txt line 829/1000
+[12:30:03.441]: [NRF] /sensor_log.txt line 830/1000
+[12:30:03.540]: [NRF] /sensor_log.txt line 831/1000
+[12:30:03.638]: [NRF] /sensor_log.txt line 832/1000
+[12:30:03.737]: [NRF] /sensor_log.txt line 833/1000
+[12:30:03.835]: [NRF] /sensor_log.txt line 834/1000
+[12:30:03.934]: [NRF] /sensor_log.txt line 835/1000
+[12:30:04.032]: [NRF] /sensor_log.txt line 836/1000
+[12:30:04.130]: [NRF] /sensor_log.txt line 837/1000
+[12:30:04.228]: [NRF] /sensor_log.txt line 838/1000
+[12:30:04.326]: [NRF] /sensor_log.txt line 839/1000
+[12:30:04.426]: [NRF] /sensor_log.txt line 840/1000
+[12:30:04.525]: [NRF] /sensor_log.txt line 841/1000
+[12:30:04.623]: [NRF] /sensor_log.txt line 842/1000
+[12:30:04.720]: [NRF] /sensor_log.txt line 843/1000
+[12:30:04.818]: [NRF] /sensor_log.txt line 844/1000
+[12:30:04.916]: [NRF] /sensor_log.txt line 845/1000
+[12:30:05.015]: [NRF] /sensor_log.txt line 846/1000
+[12:30:05.113]: [NRF] /sensor_log.txt line 847/1000
+[12:30:05.212]: [NRF] /sensor_log.txt line 848/1000
+[12:30:05.310]: [NRF] /sensor_log.txt line 849/1000
+[12:30:05.408]: [NRF] /sensor_log.txt line 850/1000
+[12:30:05.506]: [NRF] /sensor_log.txt line 851/1000
+[12:30:05.605]: [NRF] /sensor_log.txt line 852/1000
+[12:30:05.704]: [NRF] /sensor_log.txt line 853/1000
+[12:30:05.802]: [NRF] /sensor_log.txt line 854/1000
+[12:30:05.900]: [NRF] /sensor_log.txt line 855/1000
+[12:30:05.999]: [NRF] /sensor_log.txt line 856/1000
+[12:30:06.097]: [NRF] /sensor_log.txt line 857/1000
+[12:30:06.196]: [NRF] /sensor_log.txt line 858/1000
+[12:30:06.294]: [NRF] /sensor_log.txt line 859/1000
+[12:30:06.391]: [NRF] /sensor_log.txt line 860/1000
+[12:30:06.489]: [NRF] /sensor_log.txt line 861/1000
+[12:30:06.588]: [NRF] /sensor_log.txt line 862/1000
+[12:30:06.686]: [NRF] /sensor_log.txt line 863/1000
+[12:30:06.784]: [NRF] /sensor_log.txt line 864/1000
+[12:30:06.883]: [NRF] /sensor_log.txt line 865/1000
+[12:30:06.982]: [NRF] /sensor_log.txt line 866/1000
+[12:30:07.080]: [NRF] /sensor_log.txt line 867/1000
+[12:30:07.178]: [NRF] /sensor_log.txt line 868/1000
+[12:30:07.276]: [NRF] /sensor_log.txt line 869/1000
+[12:30:07.374]: [NRF] /sensor_log.txt line 870/1000
+[12:30:07.472]: [NRF] /sensor_log.txt line 871/1000
+[12:30:07.570]: [NRF] /sensor_log.txt line 872/1000
+[12:30:07.669]: [NRF] /sensor_log.txt line 873/1000
+[12:30:07.767]: [NRF] /sensor_log.txt line 874/1000
+[12:30:07.865]: [NRF] /sensor_log.txt line 875/1000
+[12:30:07.963]: [NRF] /sensor_log.txt line 876/1000
+[12:30:08.061]: [NRF] /sensor_log.txt line 877/1000
+[12:30:08.160]: [NRF] /sensor_log.txt line 878/1000
+[12:30:08.258]: [NRF] /sensor_log.txt line 879/1000
+[12:30:08.356]: [NRF] /sensor_log.txt line 880/1000
+[12:30:08.454]: [NRF] /sensor_log.txt line 881/1000
+[12:30:08.552]: [NRF] /sensor_log.txt line 882/1000
+[12:30:08.650]: [NRF] /sensor_log.txt line 883/1000
+[12:30:08.748]: [NRF] /sensor_log.txt line 884/1000
+[12:30:08.846]: [NRF] /sensor_log.txt line 885/1000
+[12:30:08.944]: [NRF] /sensor_log.txt line 886/1000
+[12:30:09.042]: [NRF] /sensor_log.txt line 887/1000
+[12:30:09.141]: [NRF] /sensor_log.txt line 888/1000
+[12:30:09.239]: [NRF] /sensor_log.txt line 889/1000
+[12:30:09.338]: [NRF] /sensor_log.txt line 890/1000
+[12:30:09.436]: [NRF] /sensor_log.txt line 891/1000
+[12:30:09.534]: [NRF] /sensor_log.txt line 892/1000
+[12:30:09.632]: [NRF] /sensor_log.txt line 893/1000
+[12:30:09.731]: [NRF] /sensor_log.txt line 894/1000
+[12:30:09.829]: [NRF] /sensor_log.txt line 895/1000
+[12:30:09.927]: [NRF] /sensor_log.txt line 896/1000
+[12:30:10.026]: [NRF] /sensor_log.txt line 897/1000
+[12:30:10.124]: [NRF] /sensor_log.txt line 898/1000
+[12:30:10.222]: [NRF] /sensor_log.txt line 899/1000
+[12:30:10.325]: [NRF] /sensor_log.txt line 900/1000
+[12:30:10.423]: [NRF] /sensor_log.txt line 901/1000
+[12:30:10.521]: [NRF] /sensor_log.txt line 902/1000
+[12:30:10.620]: [NRF] /sensor_log.txt line 903/1000
+[12:30:10.718]: [NRF] /sensor_log.txt line 904/1000
+[12:30:10.816]: [NRF] /sensor_log.txt line 905/1000
+[12:30:10.914]: [NRF] /sensor_log.txt line 906/1000
+[12:30:11.012]: [NRF] /sensor_log.txt line 907/1000
+[12:30:11.111]: [NRF] /sensor_log.txt line 908/1000
+[12:30:11.209]: [NRF] /sensor_log.txt line 909/1000
+[12:30:11.307]: [NRF] /sensor_log.txt line 910/1000
+[12:30:11.405]: [NRF] /sensor_log.txt line 911/1000
+[12:30:11.503]: [NRF] /sensor_log.txt line 912/1000
+[12:30:11.602]: [NRF] /sensor_log.txt line 913/1000
+[12:30:11.700]: [NRF] /sensor_log.txt line 914/1000
+[12:30:11.799]: [NRF] /sensor_log.txt line 915/1000
+[12:30:11.897]: [NRF] /sensor_log.txt line 916/1000
+[12:30:11.995]: [NRF] /sensor_log.txt line 917/1000
+[12:30:12.093]: [NRF] /sensor_log.txt line 918/1000
+[12:30:12.191]: [NRF] /sensor_log.txt line 919/1000
+[12:30:12.289]: [NRF] /sensor_log.txt line 920/1000
+[12:30:12.388]: [NRF] /sensor_log.txt line 921/1000
+[12:30:12.486]: [NRF] /sensor_log.txt line 922/1000
+[12:30:12.584]: [NRF] /sensor_log.txt line 923/1000
+[12:30:12.683]: [NRF] /sensor_log.txt line 924/1000
+[12:30:12.781]: [NRF] /sensor_log.txt line 925/1000
+[12:30:12.879]: [NRF] /sensor_log.txt line 926/1000
+[12:30:12.977]: [NRF] /sensor_log.txt line 927/1000
+[12:30:13.076]: [NRF] /sensor_log.txt line 928/1000
+[12:30:13.174]: [NRF] /sensor_log.txt line 929/1000
+[12:30:13.273]: [NRF] /sensor_log.txt line 930/1000
+[12:30:13.371]: [NRF] /sensor_log.txt line 931/1000
+[12:30:13.469]: [NRF] /sensor_log.txt line 932/1000
+[12:30:13.568]: [NRF] /sensor_log.txt line 933/1000
+[12:30:13.667]: [NRF] /sensor_log.txt line 934/1000
+[12:30:13.765]: [NRF] /sensor_log.txt line 935/1000
+[12:30:13.863]: [NRF] /sensor_log.txt line 936/1000
+[12:30:13.961]: [NRF] /sensor_log.txt line 937/1000
+[12:30:14.059]: [NRF] /sensor_log.txt line 938/1000
+[12:30:14.157]: [NRF] /sensor_log.txt line 939/1000
+[12:30:14.255]: [NRF] /sensor_log.txt line 940/1000
+[12:30:14.354]: [NRF] /sensor_log.txt line 941/1000
+[12:30:14.452]: [NRF] /sensor_log.txt line 942/1000
+[12:30:14.550]: [NRF] /sensor_log.txt line 943/1000
+[12:30:14.649]: [NRF] /sensor_log.txt line 944/1000
+[12:30:14.747]: [NRF] /sensor_log.txt line 945/1000
+[12:30:14.845]: [NRF] /sensor_log.txt line 946/1000
+[12:30:14.943]: [NRF] /sensor_log.txt line 947/1000
+[12:30:15.042]: [NRF] /sensor_log.txt line 948/1000
+[12:30:15.140]: [NRF] /sensor_log.txt line 949/1000
+[12:30:15.238]: [NRF] /sensor_log.txt line 950/1000
+[12:30:15.336]: [NRF] /sensor_log.txt line 951/1000
+[12:30:15.435]: [NRF] /sensor_log.txt line 952/1000
+[12:30:15.533]: [NRF] /sensor_log.txt line 953/1000
+[12:30:15.631]: [NRF] /sensor_log.txt line 954/1000
+[12:30:15.729]: [NRF] /sensor_log.txt line 955/1000
+[12:30:15.827]: [NRF] /sensor_log.txt line 956/1000
+[12:30:15.925]: [NRF] /sensor_log.txt line 957/1000
+[12:30:16.023]: [NRF] /sensor_log.txt line 958/1000
+[12:30:16.122]: [NRF] /sensor_log.txt line 959/1000
+[12:30:16.220]: [NRF] /sensor_log.txt line 960/1000
+[12:30:16.318]: [NRF] /sensor_log.txt line 961/1000
+[12:30:16.417]: [NRF] /sensor_log.txt line 962/1000
+[12:30:16.515]: [NRF] /sensor_log.txt line 963/1000
+[12:30:16.614]: [NRF] /sensor_log.txt line 964/1000
+[12:30:16.712]: [NRF] /sensor_log.txt line 965/1000
+[12:30:16.810]: [NRF] /sensor_log.txt line 966/1000
+[12:30:16.908]: [NRF] /sensor_log.txt line 967/1000
+[12:30:17.006]: [NRF] /sensor_log.txt line 968/1000
+[12:30:17.104]: [NRF] /sensor_log.txt line 969/1000
+[12:30:17.203]: [NRF] /sensor_log.txt line 970/1000
+[12:30:17.301]: [NRF] /sensor_log.txt line 971/1000
+[12:30:17.399]: [NRF] /sensor_log.txt line 972/1000
+[12:30:17.496]: [NRF] /sensor_log.txt line 973/1000
+[12:30:17.595]: [NRF] /sensor_log.txt line 974/1000
+[12:30:17.693]: [NRF] /sensor_log.txt line 975/1000
+[12:30:17.791]: [NRF] /sensor_log.txt line 976/1000
+[12:30:17.889]: [NRF] /sensor_log.txt line 977/1000
+[12:30:17.988]: [NRF] /sensor_log.txt line 978/1000
+[12:30:18.086]: [NRF] /sensor_log.txt line 979/1000
+[12:30:18.185]: [NRF] /sensor_log.txt line 980/1000
+[12:30:18.282]: [NRF] /sensor_log.txt line 981/1000
+[12:30:18.381]: [NRF] /sensor_log.txt line 982/1000
+[12:30:18.479]: [NRF] /sensor_log.txt line 983/1000
+[12:30:18.577]: [NRF] /sensor_log.txt line 984/1000
+[12:30:18.676]: [NRF] /sensor_log.txt line 985/1000
+[12:30:18.774]: [NRF] /sensor_log.txt line 986/1000
+[12:30:18.872]: [NRF] /sensor_log.txt line 987/1000
+[12:30:18.970]: [NRF] /sensor_log.txt line 988/1000
+[12:30:19.069]: [NRF] /sensor_log.txt line 989/1000
+[12:30:19.167]: [NRF] /sensor_log.txt line 990/1000
+[12:30:19.265]: [NRF] /sensor_log.txt line 991/1000
+[12:30:19.365]: [NRF] /sensor_log.txt line 992/1000
+[12:30:19.463]: [NRF] /sensor_log.txt line 993/1000
+[12:30:19.561]: [NRF] /sensor_log.txt line 994/1000
+[12:30:19.659]: [NRF] /sensor_log.txt line 995/1000
+[12:30:19.758]: [NRF] /sensor_log.txt line 996/1000
+[12:30:19.856]: [NRF] /sensor_log.txt line 997/1000
+[12:30:19.954]: [NRF] /sensor_log.txt line 998/1000
+[12:30:20.052]: [NRF] /sensor_log.txt line 999/1000
+[12:30:20.150]: [NRF] /sensor_log.txt line 1000/1000
+[12:30:20.248]: [351444ms] [INFO] FILE header: surface
+[12:30:20.298]: [351494ms] [INFO] /surface_log.txt: 1 lines
+[12:30:20.299]: [NRF] /surface_log.txt line 1/1
+[12:30:20.397]: [351593ms] [INFO] Done: sensor=1000 surface=1 pkts=4004 failed=0
+[12:30:20.397]: [STATE] Saved: gsm=3 nrf=1 sim_cycle=3
+[12:30:20.398]: [SEARCH] Transfer complete - running post-extraction cleanup
+[12:30:20.398]: [HTTP] PUT /buoy/status.json
+[12:30:21.657]: [HTTP] Response in 1258ms
+[12:30:21.658]: [SEARCH] sensor_log cleared, surface_log retained
+[12:30:21.658]: [SEARCH] Mode restored to LONG - awaiting operator resume (send 'start')
+[12:30:21.663]: [HTTP] PUT /buoy/sensor_data/20260518-122837/readings.json  (1000 records)
+[12:30:23.970]: [HTTP] Response in 2303ms
+[12:30:23.971]: [HTTP] PUT /buoy/sensor_data/20260518-122837/surface.json  (1 records)
+[12:30:25.192]: [HTTP] Response in 1219ms
+[12:30:25.192]: [HTTP] PUT /buoy/sensor_data/20260518-122837/info.json
+[12:30:26.307]: [HTTP] Response in 1113ms
+[12:30:26.308]: [HTTP] PUT /buoy/ctrl/command.json  cmd=start
+[12:31:07.650]: 
+[12:31:07.650]: ========== GSM Cycle ==========
+[12:31:07.650]: [CYCLE] cycle_active=NO  tx_mode=LONG  surface_hold=NO
+[12:31:07.650]: [SIM] cycle=4 lat=-33.64123 lng=16.27851 batt=84%
+[12:31:09.651]: [HTTP] GET /buoy/ctrl.json
+[12:31:10.823]: [HTTP] Response in 1171ms
+[12:31:11.324]: [CFG] tx_interval=40s
+[12:31:11.325]: [CMD] Pending: start  status=pending
+[12:31:11.325]: [CMD] START - transmission resumed
+[12:31:12.482]: [CMD] ACK written
+[12:31:12.482]: [SD] Surface: la=-33.64123 ln=16.27851 b=84%
+[12:31:13.483]: [BAL] Checking MTN balance...
+[12:31:29.483]: [BAL] Airtime: R18.80 | Data: 938.01 MB
+[12:31:29.484]: [DATA] Payload: {"ts":"2026-05-18T12:31:29","la":-33.641231,"ln":16.278514,"b":84,"airtime":18.8,"data_mb":"938.01 MB"}
+[12:31:29.484]: [DATA] Payload size: 103 bytes (Iridium limit: 340)
+[12:31:29.484]: [HTTP] POST /buoy/history.json
+[12:31:30.815]: [HTTP] Response in 1329ms
+[12:31:31.315]: [HTTP] POST OK
+[12:31:31.316]: [STATE] Saved: gsm=4 nrf=1 sim_cycle=4
+[12:31:31.316]: [CYCLE] Done. gsm_cycles=4
+[12:31:31.316]: 
